@@ -24,7 +24,7 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # -VUE-
-    - B端管理系统架构技术：VUE、Antd、VueRouter、VueX、axios、vue-cli、eslint
+    - B端管理系统架构技术：VUE、Antd、VueRouter、VueX、axios、vue-cli、eslint、echarts、
     - 
 
 
