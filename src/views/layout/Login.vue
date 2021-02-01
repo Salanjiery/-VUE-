@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-// import api from '@/api/user';
+import api from '@/api/user';
 
 export default {
   data() {
@@ -61,18 +61,17 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          // api.login(this.loginForm).then((res) => {
-          //   // console.log(res);
-          //   this.$store.dispatch('setUserInfo', res);
-          //   this.$router.push({
-          //     name: 'Home',
-          //   });
-          // }).catch((error) => {
-          //   this.$message.error(error);
-          // });
+          api.login(this.loginForm).then(() => {
+
+            // this.$store.dispatch('setUserInfo', res);
+            // this.$router.push({
+            //   name: 'Home',
+            // });
+          }).catch((error) => {
+            this.$message.error(error);
+          });
           return true;
         }
-        // console.log('error submit!!');
         return false;
       });
     },
